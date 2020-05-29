@@ -15,7 +15,7 @@ The Index.html file has 3 buttons: Students, Courses and New_Estudent
 * last last
 * green circle if the student's status is active. Nothing if is not active
 * enrolled curses
-* 'edit' button (allow to change user information)
+* 'edit' button (allow to change student information)
 * 'add course' button (add another curse)
 
 This is an Example
