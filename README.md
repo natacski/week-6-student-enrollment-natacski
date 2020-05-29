@@ -37,9 +37,9 @@ This is an Example
 
 
 Students data link:
-https://code-the-dream-school.github.io/JSONStudentsApp.github.io/Courses.json
+https://code-the-dream-school.github.io/JSONStudentsApp.github.io/Students.json
 The response is a json Array of students objects with the following properties: name, last_name, status and id. The status property means if the student is active or not to take courses.
 
 Courses data link:
-https://code-the-dream-school.github.io/JSONStudentsApp.github.io/Students.json
+https://code-the-dream-school.github.io/JSONStudentsApp.github.io/Courses.json
 The response is a json Array of courses objects with the following properties: name, duration, and id.
