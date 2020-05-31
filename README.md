@@ -26,7 +26,7 @@ This is an Example
 * name
 * duration
 * students (the students enrolled in that course)
-* 'add student' button (enroll another student to that course)
+* 'add student' button (enroll a current student to that course)
 
 This is an Example
 <img src = "./images/courses.png"/>
