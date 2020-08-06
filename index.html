@@ -10,18 +10,103 @@
   </head>
   <body>
 
-    <div class="container">
-      <div class="jumbotron bg-dark text-white">
-        <h1 class="display-4">Student Enrollment program</h1>
-        <hr class="my-4">
-          <button class="btn btn-outline-info" type="button" id="students">Students</button>
-          <button class="btn btn-outline-info" type="button" id="Courses">courses</button>
-          <button class="btn btn-outline-info" type="button" id="new_student">New Student</button>
-      </div>
+  
+ <!--jumbotron-->
+ <div class="container">
+    <div class="jumbotron jumbotron-fluid text-light border border-primary rounded">
+        <div class="container text-sm-center pt-3">
+            <h1 class="display-3">Student Enrollment Program</h1><br>
+            <div class="btn-group mt-4 pb-4" role="group" aria-label="Callout buttons">
+                <button class="btn btn-light btn-lg mr-1 border border-primary rounded" type="button" id="students" disabled>Students</button>
+                <button class="btn btn-light btn-lg mr-1 border border-primary rounded" type="button" id="courses" disabled>Courses</button>
+                <button class="btn btn-light btn-lg mr-1 border border-primary rounded" type="button" data-toggle="modal" data-target="#new_student">New Student</button>
+             
+            </div>
+        </div>
     </div>
+</div>
+<!--/jumbotron-->
 
+<div id="students_data_body">
+  <!--STUDENT CARDS GOES HERE-->
+</div>
 
+<div id="courses_data_body">
+  <!--COURSES CARDS GOES HERE-->
+</div>
 
+  <!-- Modal for New Student -->
+  <div class="modal fade" id="new_student" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-light border-bottom border-primary">
+                <h5 class="modal-title" id="exampleModalLabel">New Student</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--New student form-->  
+            <div class="modal-body">
+              <form class="form-body" onsubmit="event.preventDefault();"> 
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="name">First Name</label>
+                          <input type="text" class="form-control" id="name" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                          <label for="lastName">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" required>
+                      </div>
+                     <button class="btn btn-light btn-md mr-1 border border-primary rounded" name="submit"  id="submit_btn">Submit</button>
+                  </div>
+              </form>
+             </div>    
+             <!--/close student form-->
+        </div>
+    </div>
+  </div>
+
+   <!-- Modal for existing Student -->
+   <div class="modal fade" id="modal-edit-student" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-light border-bottom border-primary">
+                <h5 class="modal-title" >Edit info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Edit student info form-->  
+            <div class="modal-body">
+              <form class="form-body" onsubmit="event.preventDefault();"> 
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="name">First Name</label>
+                          <input type="text" class="form-control" id="name_edit" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                          <label for="lastName">Last Name</label>
+                          <input type="text" class="form-control" id="lastName_edit" required>
+                      </div>
+                      
+                     
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="status-drop-down">Status</label>
+                        <select name="status-drop-down" id="status-drop-down">
+                          <option value="true">Active</option>
+                          <option value="false">Inactive</option>
+                          </select>
+                    </div>
+                </div>
+                  <button class="btn btn-light btn-md mr-1 border border-primary rounded" name="submit"  id="edit-student-submit">Submit</button>
+              </form>
+             </div>    
+             <!--/close student info form-->
+        </div>
+    </div>
+  </div>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

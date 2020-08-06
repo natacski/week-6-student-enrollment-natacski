@@ -1,6 +1,27 @@
 .container{
-  width: 70%;
+  width: 100%;
   margin: auto;
   margin-top: 2%;
   text-align: center;
+ 
 }
+
+.jumbotron {
+  background: linear-gradient(#02aab0, #00cdac);
+  margin: 90px 10px;
+ }
+
+ li {
+  list-style-type: none;
+  padding-right: 30px;  
+  }
+
+ .dot {
+  height: 20px;
+  width: 20px;
+  background-color: #00cdac;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+ 
